@@ -1,5 +1,9 @@
 # 🚀 Managing GCP Compute Engine with Terraform
 
+<p align="center">
+  <img width="720" alt="Image" src="https://github.com/user-attachments/assets/4319de6e-4c41-4896-b9cb-85525d684fac" />
+</p>
+
 This repository demonstrates how to manage **Google Cloud Platform (GCP)** Compute Engine instances using **Terraform**. It provides a structured approach for setting up a GCP project, configuring Terraform, and deploying infrastructure resources efficiently.
 
 ## 📑 Table of Contents
@@ -61,14 +65,33 @@ This repository follows a modular approach to organizing Terraform configuration
     - Create a new project or select an existing one.
     - Note your project ID for Terraform configuration.
 
+![Image](https://github.com/user-attachments/assets/c56df151-9866-42d3-81cb-6af6d23c988d)
+
+![Image](https://github.com/user-attachments/assets/5beed902-ff56-41d4-8177-3157ce52c3ee)
+
 2. **🔌 Enable Compute Engine API**:
     - Navigate to **APIs & Services > Library**.
     - Search for **Compute Engine API** and click **Enable**.
+
+![Image](https://github.com/user-attachments/assets/01c3ec6d-35fc-49a3-90a1-873748727ead)
+
+![Image](https://github.com/user-attachments/assets/7eadcc45-c228-47e4-bfc3-6c0409bbc5ae)
+
+![Image](https://github.com/user-attachments/assets/6a188854-3ba0-4de1-abe6-d7183ea79048)
+
+![Image](https://github.com/user-attachments/assets/bfb3cedb-1961-4bd8-8cd4-d665a64506f8)
+
+![Image](https://github.com/user-attachments/assets/66983cb1-09ee-4278-926c-1c89d6349d78)
 
 3. **👤 Create a Service Account**:
     - Navigate to **IAM & Admin > Service Accounts**.
     - Click **Create Service Account**, assign a role (`Compute Admin` or `Project Owner`).
     - Generate a **JSON key** and download it securely.
+
+
+![Image](https://github.com/user-attachments/assets/8c03dd26-e9dd-4cc4-9a09-3dd76f54c1df)
+
+![Image](https://github.com/user-attachments/assets/53c39515-fcbf-4016-8276-3c78529273dd)
 
 4. **🌍 Set Environment Variables**:
 
@@ -78,6 +101,8 @@ This repository follows a modular approach to organizing Terraform configuration
 
     Replace `/path/to/your-keyfile.json` with the actual path.
 
+
+
 ## 🔧 Setting Up Terraform
 
 1. **⬇️ Install Terraform**: Follow the [Terraform installation guide](https://learn.hashicorp.com/tutorials/terraform/install-cli).
@@ -86,6 +111,7 @@ This repository follows a modular approach to organizing Terraform configuration
     ```bash
     terraform init
     ```
+    ![Image](https://github.com/user-attachments/assets/3cefb889-0633-4166-8b50-e72a888388a5)
 
 ## 🛠️ Terraform Configuration
 
@@ -166,6 +192,8 @@ Below shows some example ways of configuring , for in detail approach refer the 
 
     Type `yes` when prompted.
 
+    ![Image](https://github.com/user-attachments/assets/ba289ca6-5e08-4215-8c12-1107d04783f6)
+
 3. **📌 Verify the Deployment**:
     - Navigate to **Compute Engine > VM instances** in the [GCP Console](https://console.cloud.google.com/).
 
@@ -178,6 +206,11 @@ terraform destroy
 ```
 
 Confirm by typing `yes`.
+
+![Image](https://github.com/user-attachments/assets/3537e7f8-37e5-4dbc-a60a-96508cfaa037)
+
+![Image](https://github.com/user-attachments/assets/f9d61633-a758-4049-af14-17eca8d8153f)
+
 
 ## 📌 Additional Resources
 
